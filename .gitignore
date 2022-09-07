@@ -1,7 +1,4 @@
-node_modules
-yarn.lock
-yarn.error
-.DS_Store
+node_modules/
 dist
 # local env files
 .env.local
@@ -22,8 +19,5 @@ pnpm-debug.log*
 *.sln
 *.sw?
 *.history
+.DS_Store
 
-node_modules/
-vuepress-theme-hope/.vuepress/.cache/
-vuepress-theme-hope/.vuepress/.temp/
-vuepress-theme-hope/.vuepress/dist/
