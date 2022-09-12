@@ -32,6 +32,7 @@
     "vuepress-plugin-smooth-scroll": "^0.0.10"
   },
   "dependencies": {
+    "@vuepress/shared-utils": "^1.9.7",
     "ansi-regex": "4.1.1",
     "async": "2.6.4",
     "autoprefixer": "^6.5.4",
@@ -55,6 +56,7 @@
     "terser": "4.8.1",
     "url-parse": "1.5.8",
     "vue-class-component": "*",
+    "vuepress-plugin-mygitalk": "^1.0.5",
     "vuepress-sidebar-atuo": "^1.0.4"
   },
   "private": true,

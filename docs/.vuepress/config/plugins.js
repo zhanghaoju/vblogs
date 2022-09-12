@@ -52,4 +52,25 @@ module.exports=[
         //     }
         // ]
     }],
+    // 评论插件
+    [
+        'vuepress-plugin-mygitalk', {
+        // 是否启用(关闭请设置为false)(default: true)
+        enable: true,
+        // 是否开启首页评论(default: true)
+        home: false,
+        // Gitalk配置
+        gitalk: {
+            // GitHub Application Client ID.
+            clientID: '3606adc2786c9fa2696a',
+            // GitHub Application Client Secret.
+            clientSecret: '66aa4a9ef16f3874b59fc5d22eae622c4c9625a5',
+            // GitHub repository. 存储评论的 repo
+            repo: 'vblogs',
+            // GitHub repository 所有者，可以是个人或者组织。
+            owner: 'zhanghaoju',
+            // 设置语言(default: zh-CN)
+            language: 'zh-CN',
+        }
+    }],
 ]

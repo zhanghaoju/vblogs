@@ -1,7 +1,7 @@
 <template>
   <div class="footer-wrapper">
     <span>
-     <!-- <reco-icon icon="reco-theme" />-->
+      <!-- <reco-icon icon="reco-theme" />-->
       <!--<a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>-->
     </span>
     <span v-if="$themeConfig.record">
@@ -11,9 +11,13 @@
     <span>
       <reco-icon icon="reco-copyright" />
       <a>
-        <span v-if="$themeConfig.author || $site.title">{{ $themeConfig.author || $site.title }}</span>
+        <span v-if="$themeConfig.author || $site.title">{{
+          $themeConfig.author || $site.title
+        }}</span>
         &nbsp;&nbsp;
-        <span v-if="$themeConfig.startYear && $themeConfig.startYear != (new Date().getFullYear())">{{ $themeConfig.startYear }} - </span>
+        <span v-if="$themeConfig.startYear && $themeConfig.startYear != new Date().getFullYear()"
+          >{{ $themeConfig.startYear }} -
+        </span>
         {{ new Date().getFullYear() }}
       </a>
     </span>
@@ -23,55 +27,55 @@
     </span>
     <!--备案-->
     <p class="cyber-security" v-if="$themeConfig.cyberSecurityRecord">
-      <img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" alt="">
+      <img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" alt="" />
       <a :href="$themeConfig.cyberSecurityLink || '#'">{{ $themeConfig.cyberSecurityRecord }}</a>
     </p>
-    <Comments :isShowComments="false"/>
-    <span id="busuanzi_container_site_pv" style="display:none">
+    <Comments :isShowComments="false" />
+    <!-- <span id="busuanzi_container_site_pv" style="display:none">
       本站总访问量
       <span id="busuanzi_value_site_pv"></span>次
       <span class="post-meta-divider">|</span>
     </span>
-      <span id="busuanzi_container_site_uv" style="display:none">
+    <span id="busuanzi_container_site_uv" style="display:none">
       本站访客数
       <span id="busuanzi_value_site_uv"></span>人
-    </span>
-    </div>
+    </span> -->
+  </div>
 </template>
 
 <script>
-import { defineComponent, computed } from '@vue/composition-api'
-import { RecoIcon } from '@vuepress-reco/core/lib/components'
-import { version } from '../package.json'
+import { defineComponent, computed } from '@vue/composition-api';
+import { RecoIcon } from '@vuepress-reco/core/lib/components';
+import { version } from '../package.json';
 let script;
 export default defineComponent({
   components: { RecoIcon },
-  setup (props, ctx) {
+  setup(props, ctx) {
     const showAccessNumber = computed(() => {
       const {
         $themeConfig: { valineConfig },
-        $themeLocaleConfig: { valineConfig: valineLocalConfig }
-      } = ctx.root
+        $themeLocaleConfig: { valineConfig: valineLocalConfig },
+      } = ctx.root;
 
-      const vc = valineLocalConfig || valineConfig
+      const vc = valineLocalConfig || valineConfig;
 
-      return vc && vc.visitor != false
-    })
-    return { version, showAccessNumber }
+      return vc && vc.visitor != false;
+    });
+    return { version, showAccessNumber };
   },
-  mounted() {
-    script = require("busuanzi.pure.js");
-  },
-  // 监听,当路由发生变化的时候执行
-  watch: {
-    $route(to, from) {
-      if (to.path != from.path) {
-        script.fetch();
-      }
-      // console.log(to.path);
-    }
-  }
-})
+  // mounted() {
+  //   script = require("busuanzi.pure.js");
+  // },
+  // // 监听,当路由发生变化的时候执行
+  // watch: {
+  //   $route(to, from) {
+  //     if (to.path != from.path) {
+  //       script.fetch();
+  //     }
+  //     // console.log(to.path);
+  //   }
+  // }
+});
 </script>
 
 <style lang="stylus" scoped>

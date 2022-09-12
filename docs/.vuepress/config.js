@@ -4,7 +4,7 @@ const themeConfig=require('./config/themeConfig')
 module.exports = {
 	title: '夜雨炊烟的小栈',
 	description: '读书的人可以体验一千种人生，不读书的人只能活一次。',
-	base: '/',
+	base: '/vblogs/',
 	locales: {
 		'/': {
 			lang: 'zh-CN'

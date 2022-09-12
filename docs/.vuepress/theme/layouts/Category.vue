@@ -5,12 +5,15 @@
       <ul v-show="recoShowModule" class="category-wrapper">
         <li
           class="category-item"
-          :class="title == item.name ? 'active': ''"
+          :class="title == item.name ? 'active' : ''"
           v-for="(item, index) in this.$categories.list"
-          :key="index">
+          :key="index"
+        >
           <router-link :to="item.path">
             <span class="category-name">{{ item.name }}</span>
-            <span class="post-num" :style="{ 'backgroundColor': getOneColor() }">{{ item.pages.length }}</span>
+            <span class="post-num" :style="{ backgroundColor: getOneColor() }">{{
+              item.pages.length
+            }}</span>
           </router-link>
         </li>
       </ul>
@@ -23,7 +26,8 @@
         class="list"
         :data="posts"
         :currentPage="currentPage"
-        @currentTag="getCurrentTag"></note-abstract>
+        @currentTag="getCurrentTag"
+      ></note-abstract>
     </ModuleTransition>
 
     <!-- 分页 -->
@@ -32,74 +36,75 @@
         class="pagation"
         :total="posts.length"
         :currentPage="currentPage"
-        @getCurrentPage="getCurrentPage"></pagation>
+        @getCurrentPage="getCurrentPage"
+      ></pagation>
     </ModuleTransition>
   </Common>
 </template>
 
 <script>
-import Common from '@theme/components/Common'
-import NoteAbstract from '@theme/components/NoteAbstract'
-import { ModuleTransition } from '@vuepress-reco/core/lib/components'
-import pagination from '@theme/mixins/pagination'
-import { sortPostsByStickyAndDate, filterPosts } from '@theme/helpers/postData'
-import { getOneColor } from '@theme/helpers/other'
-import moduleTransitonMixin from '@theme/mixins/moduleTransiton'
+import Common from '@theme/components/Common';
+import NoteAbstract from '@theme/components/NoteAbstract';
+import { ModuleTransition } from '@vuepress-reco/core/lib/components';
+import pagination from '@theme/mixins/pagination';
+import { sortPostsByStickyAndDate, filterPosts } from '@theme/helpers/postData';
+import { getOneColor } from '@theme/helpers/other';
+import moduleTransitonMixin from '@theme/mixins/moduleTransiton';
 
 export default {
   mixins: [pagination, moduleTransitonMixin],
   components: { Common, NoteAbstract, ModuleTransition },
 
-  data () {
+  data() {
     return {
-      currentPage: 1
-    }
+      currentPage: 1,
+    };
   },
 
   computed: {
     // 时间降序后的博客列表
-    posts () {
-      let posts = this.$currentCategories.pages
-      posts = filterPosts(posts)
-      sortPostsByStickyAndDate(posts)
-      return posts
+    posts() {
+      let posts = this.$currentCategories.pages;
+      posts = filterPosts(posts);
+      sortPostsByStickyAndDate(posts);
+      return posts;
     },
     // 标题只显示分类名称
-    title () {
-      return this.$currentCategories.key
-    }
+    title() {
+      return this.$currentCategories.key;
+    },
   },
 
-  mounted () {
-    this._setPage(this._getStoragePage())
+  mounted() {
+    this._setPage(this._getStoragePage());
   },
 
   methods: {
     // 获取当前tag
-    getCurrentTag (tag) {
-      this.$emit('currentTag', tag)
+    getCurrentTag(tag) {
+      this.$emit('currentTag', tag);
     },
     // 获取当前页码
-    getCurrentPage (page) {
-      this._setPage(page)
+    getCurrentPage(page) {
+      this._setPage(page);
       setTimeout(() => {
-        window.scrollTo(0, 0)
-      }, 100)
+        window.scrollTo(0, 0);
+      }, 100);
     },
-    _setPage (page) {
-      this.currentPage = page
-      this.$page.currentPage = page
-      this._setStoragePage(page)
+    _setPage(page) {
+      this.currentPage = page;
+      this.$page.currentPage = page;
+      this._setStoragePage(page);
     },
-    getOneColor
+    getOneColor,
   },
 
   watch: {
-    $route () {
-      this._setPage(this._getStoragePage())
-    }
-  }
-}
+    $route() {
+      this._setPage(this._getStoragePage());
+    },
+  },
+};
 </script>
 
 <style src="../styles/theme.styl" lang="stylus"></style>

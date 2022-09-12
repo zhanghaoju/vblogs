@@ -3,5 +3,6 @@ title: 送给自己的一段话
 date: 2022-08-31
 permalink: /happiness/life-records/introduction/
 ---
-
-## 周报
+::: tip
+愿生活虐你千百遍，你仍待它如初恋。   
+:::
