@@ -10,7 +10,7 @@ module.exports = [
     icon: '',
     items: [
       {
-        text: '前端知识库',
+        text: '前端工程师手册',
         link: '/document/frontend/introduction/',
         icon: 'reco-document',
       },

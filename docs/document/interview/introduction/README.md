@@ -4,4 +4,6 @@ date: 2022-08-31
 permalink: /document/interview/introduction/
 ---
 
-## 周报
+::: tip
+你的问题在于读的太少，而想的太多。
+:::
