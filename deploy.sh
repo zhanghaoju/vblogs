@@ -19,6 +19,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
+# 命令：npm run deploy
 # 如果你想要部署发布到 https://USERNAME.github.io/<REPO>
 git push -f git@github.com:zhanghaoju/vblogs.git master
 

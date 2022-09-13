@@ -20,9 +20,9 @@ export default {
   data () {
     return {
       modeOptions: [
-        { mode: 'dark', title: 'dark' },
-        { mode: 'auto', title: 'auto' },
-        { mode: 'light', title: 'light' }
+        { mode: 'dark', title: '夜晚' },
+        { mode: 'auto', title: '自动' },
+        { mode: 'light', title: '白天' }
       ],
       currentMode: 'light'
     }
@@ -75,8 +75,8 @@ export default {
     font-weight bold
     color var(--text-color)
     position: relative;
-    left: 30%;
-    top: 0px;
+    left: 0;
+    top: 0;
   .color-mode-options
     display: flex;
     flex-wrap wrap

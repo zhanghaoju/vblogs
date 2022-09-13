@@ -30,7 +30,8 @@ module.exports = {
   ],
   '/document/reading-notes/': [
     getDocPath('前端技术书籍阅读笔记', false, '/document/reading-notes/introduction/'),
-    getDocPath('你不知道的JavaScript上册', false, '/document/reading-notes/year2022/'),
+    getDocPath('你不知道的JavaScript(上卷)', false, '/document/reading-notes/js-01/'),
+    getDocPath('JavaScript高级程序设计', false, '/document/reading-notes/js-02/'),
   ],
   '/document/business-code/': [
     getDocPath('业务代码记录', false, '/document/business-code/introduction/'),
