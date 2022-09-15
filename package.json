@@ -25,6 +25,7 @@
     "md5": "^2.3.0",
     "vue-click-outside": "^1.1.0",
     "vuepress": "^1.8.0",
+    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-container": "^2.0.2",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
     "vuepress-plugin-reading-time1": "^1.31.0-beta.1",
@@ -33,6 +34,7 @@
     "vuepress-plugin-smooth-scroll": "^0.0.10"
   },
   "dependencies": {
+    "@vssue/api-github-v4": "^1.4.7",
     "@vuepress/shared-utils": "^1.9.7",
     "ansi-regex": "4.1.1",
     "async": "2.6.4",
@@ -41,6 +43,7 @@
     "busuanzi.pure.js": "^1.0.3",
     "chalk": "^2.0.0",
     "commander": "^2.0.0",
+    "dayjs": "^1.11.5",
     "elliptic": "^6.5.4",
     "esm": "^3.0.0",
     "eventsource": "1.1.1",

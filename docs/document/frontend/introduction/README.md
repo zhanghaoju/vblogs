@@ -2,6 +2,7 @@
 title: 前言
 date: 2022-08-31 23:50:11
 permalink: /document/frontend/introduction/
+isShowComments: false
 ---
 
 ::: tip

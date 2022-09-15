@@ -2,7 +2,7 @@
 title: 送给自己的一段话
 date: 2022-08-31
 isShowComments: false
-permalink: /happiness/books/introduction/
+permalink: /happiness/read/introduction/
 ---
 
 ::: tip

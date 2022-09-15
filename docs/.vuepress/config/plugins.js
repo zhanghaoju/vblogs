@@ -53,27 +53,51 @@ module.exports = [
       // ]
     },
   ],
-  // 评论插件
   [
-    'vuepress-plugin-mygitalk',
+    '@vuepress/last-updated', // "上次更新"时间格式
     {
-      // 是否启用(关闭请设置为false)(default: true)
-      enable: true,
-      // 是否开启首页评论(default: true)
-      home: false,
-      // Gitalk配置
-      gitalk: {
-        // GitHub Application Client ID.
-        clientID: '3606adc2786c9fa2696a',
-        // GitHub Application Client Secret.
-        clientSecret: '66aa4a9ef16f3874b59fc5d22eae622c4c9625a5',
-        // GitHub repository. 存储评论的 repo
-        repo: 'vblogs',
-        // GitHub repository 所有者，可以是个人或者组织。
-        owner: 'zhanghaoju',
-        // 设置语言(default: zh-CN)
-        language: 'zh-CN',
+      transformer: (timestamp, lang) => {
+        const dayjs = require('dayjs') // https://day.js.org/
+        return dayjs(timestamp).format('YYYY-MM-DD HH:mm:ss')
       },
     },
   ],
+  // 评论插件
+  // [
+  //   'vuepress-plugin-mygitalk',
+  //   {
+  //     // 是否启用(关闭请设置为false)(default: true)
+  //     enable: true,
+  //     // 是否开启首页评论(default: true)
+  //     home: false,
+  //     // Gitalk配置
+  //     gitalk: {
+  //       // GitHub Application Client ID.
+  //       clientID: '3606adc2786c9fa2696a',
+  //       // GitHub Application Client Secret.
+  //       clientSecret: '66aa4a9ef16f3874b59fc5d22eae622c4c9625a5',
+  //       // GitHub repository. 存储评论的 repo
+  //       repo: 'vblogs',
+  //       // GitHub repository 所有者，可以是个人或者组织。
+  //       owner: 'zhanghaoju',
+  //       // 设置语言(default: zh-CN)
+  //       language: 'zh-CN',
+  //       autoCreateIssue: true,//自动创建评论
+  //     },
+  //   },
+  // ],
+   [
+      '@vssue/vuepress-plugin-vssue', {
+      // 设置 `platform` 而不是 `api`
+        platform: 'github-v4',
+        locale: 'zh-CN',
+        owner: "zhanghaoju",//对应 仓库 的拥有者帐号或者团队
+        repo: "yychuiyan", // 用来存储评论的 仓库
+        clientId: "3606adc2786c9fa2696a",  // OAuth App 的 client id
+        clientSecret: "66aa4a9ef16f3874b59fc5d22eae622c4c9625a5",  // OAuth App 的 client secret
+       // autoCreateIssue: true,//自动创建评论
+    }
+  ],
+
+
 ];

@@ -8,6 +8,10 @@ module.exports = {
     getDocPath('鸡汤煲', false, '/happiness/life-records/introduction/'),
     getDocPath('2022年度录', false, '/happiness/life-records/year2022/'),
   ],
+  '/happiness/read/': [
+    getDocPath('鸡汤煲', false, '/happiness/read/introduction/'),
+    getDocPath('2022年度录', false, '/happiness/read/year2022/'),
+  ],
   '/document/frontend/': [
     getDocPath('前端工程师手册', false, '/document/frontend/introduction/'),
     getDocPath('HTML必知必会', true, '/document/frontend/html/'),

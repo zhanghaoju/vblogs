@@ -13,13 +13,19 @@
     {{ $themeConfig.author || $site.title }}
   </h3>
   <div class="num">
-    <div>
-      <h3>{{$recoPosts.length}}</h3>
+    <div style="cursor: pointer">
+      <a href="http://localhost:8080/vblogs/timeline/">
+      <h3>
+        {{$recoPosts.length}}
+      </h3>
       <h6>{{homeBlogCfg.article}}</h6>
+      </a>
     </div>
     <div>
-      <h3>{{$tags.list.length}}</h3>
-      <h6>{{homeBlogCfg.tag}}</h6>
+      <a href="http://localhost:8080/vblogs/tag/">
+        <h3>{{$tags.list.length}}</h3>
+        <h6>{{homeBlogCfg.tag}}</h6>
+      </a>
     </div>
   </div>
   <ul class="social-links">
@@ -52,7 +58,7 @@ export default defineComponent({
     }))
 
     return { homeBlogCfg, socialLinks }
-  }
+  },
 })
 </script>
 

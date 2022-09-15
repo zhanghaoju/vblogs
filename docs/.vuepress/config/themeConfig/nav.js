@@ -52,6 +52,7 @@ module.exports = [
     items: [
       { text: '读书笔记', link: '/happiness/books/introduction/', icon: 'reco-document' },
       { text: '生活日常', link: '/happiness/life-records/introduction/', icon: 'reco-document' },
+      { text: '阅读专栏', link: '/happiness/read/introduction/', icon: 'reco-document' },
     ],
   },
   {
@@ -75,7 +76,7 @@ module.exports = [
     items: [
       { text: 'GitHub', link: 'https://github.com/zhanghaoju', icon: '' },
       { text: '掘金', link: 'https://juejin.cn/user/149189312651341', icon: '' },
-      // {text: '关于我', link: '/about/', icon: ''},
+      {text: '关于', link: '/about/', icon: ''},
     ],
   },
 ];

@@ -118,12 +118,15 @@ export default {
       return false
     },
     lastUpdated () {
-      if (!this.$page.lastUpdated){   
+      if (!this.$page.lastUpdated){
         return new Date().toJSON().split('T')[0] // 如果未提交过git，lastUpdated为当前时间
       }
       else
         return new Date(this.$page.lastUpdated).toJSON().split('T')[0]
     },
+    // lastUpdated () {
+    //   return new Date(this.$page.lastUpdated).toLocaleString()
+    // },
     lastUpdatedText () {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
         return this.$themeLocaleConfig.lastUpdated

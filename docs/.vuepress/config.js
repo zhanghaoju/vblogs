@@ -3,7 +3,7 @@ const plugins = require('./config/plugins');
 const themeConfig = require('./config/themeConfig');
 module.exports = {
   title: '夜雨炊烟',
-  description: '读书的人可以体验一千种人生，不读书的人只能活一次。',
+  description: '做一个决定，并不难，难的是付诸行动，并且坚持到底。',
   base: '/vblogs/',
   locales: {
     '/': {

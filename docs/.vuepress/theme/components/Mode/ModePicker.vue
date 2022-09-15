@@ -20,17 +20,17 @@ export default {
   data () {
     return {
       modeOptions: [
-        { mode: 'dark', title: '夜晚' },
-        { mode: 'auto', title: '自动' },
+        { mode: 'dark', title: '夜间' },
+        // { mode: 'auto', title: '自动' },
         { mode: 'light', title: '白天' }
       ],
-      currentMode: 'light'
+      currentMode: 'dark'
     }
   },
 
   mounted () {
     // modePicker 开启时默认使用用户主动设置的模式
-    this.currentMode = localStorage.getItem('mode') || this.$themeConfig.mode || 'auto'
+    this.currentMode = localStorage.getItem('mode') || this.$themeConfig.mode || 'light'
 
     // Dark and Light autoswitches
     // 为了避免在 server-side 被执行，故在 Vue 组件中设置监听器
@@ -64,7 +64,7 @@ export default {
 .mode-options
   background-color var(--background-color)
   //min-width: 125px;
-  min-width: 160px;
+  min-width: 80px;
   margin: 0;
   padding: 1em;
   box-shadow var(--box-shadow);

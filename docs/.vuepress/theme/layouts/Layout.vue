@@ -14,7 +14,6 @@ import Footer from '@theme/components/Footer';
 import Common from '@theme/components/Common';
 import { resolveSidebarItems } from '@theme/helpers/utils';
 import moduleTransitonMixin from '@theme/mixins/moduleTransiton';
-
 export default {
   mixins: [moduleTransitonMixin],
   components: { HomeBlog, Home, Page, Common, Footer },

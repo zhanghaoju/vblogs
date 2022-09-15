@@ -68,6 +68,7 @@ export default {
 	position: relative;
 	margin-right: 1em;
   cursor pointer;
+  display block;
 	.color-button {
 		align-items: center;
 		height: 100%;

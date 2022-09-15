@@ -184,7 +184,7 @@ export default {
     position relative
     box-sizing border-box
     padding 0 20px
-    height 20vh
+    height 60vh
     display flex
     align-items center
     justify-content center
