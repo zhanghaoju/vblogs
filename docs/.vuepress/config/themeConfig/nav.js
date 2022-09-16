@@ -31,7 +31,7 @@ module.exports = [
         link: '/document/daily-records/introduction/',
         icon: 'reco-document',
       },
-      { text: '周报记录', link: '/document/weekly/introduction/', icon: 'reco-document' },
+      // { text: '周报记录', link: '/document/weekly/introduction/', icon: 'reco-document' },
       { text: '前端面试记录', link: '/document/interview/introduction/', icon: 'reco-document' },
       {
         text: '前端书籍阅读笔记',

@@ -1,6 +1,6 @@
 ---
 title: 什么是BFC和IFC？
-date: 2022-09-6
+date: 2022-09-06
 categories:
 - FrontEnd
 tags:

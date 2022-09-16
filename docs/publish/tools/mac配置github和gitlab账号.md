@@ -1,6 +1,6 @@
 ---
 title: mac配置github和gitlab账号
-date: 2022-09-03 21:20:00
+date: 2022-02-22
 categories:
 - ToolClass
 tags:
