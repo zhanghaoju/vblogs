@@ -1,7 +1,9 @@
+博客地址：[gitee页面地址](https://zhanghaoju.gitee.io/vblogs/)
+
 ## VuePress博客搭建
 
 因为`vuepress`本身就是一个文档型的页面，比较简约，这里使用的是大佬[午后南杂](https://www.recoluan.com/)制作的一个主题，个人认为应该是vuepress最好的主题之一
-
+Cancel changes
 ### 安装
 
 全局安装：`npm install @vuepress-reco/theme-cli -g`
