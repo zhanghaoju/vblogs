@@ -14,7 +14,7 @@
   </h3>
   <div class="num">
     <div style="cursor: pointer">
-      <a href="http://localhost:8080/vblogs/timeline/">
+      <a href="https://zhanghaoju.gitee.io/vblogs/timeline/">
       <h3>
         {{$recoPosts.length}}
       </h3>
@@ -22,7 +22,7 @@
       </a>
     </div>
     <div>
-      <a href="http://localhost:8080/vblogs/tag/">
+      <a href="https://zhanghaoju.gitee.io/vblogs/tag/">
         <h3>{{$tags.list.length}}</h3>
         <h6>{{homeBlogCfg.tag}}</h6>
       </a>

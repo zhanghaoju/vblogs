@@ -86,18 +86,38 @@ module.exports = [
   //     },
   //   },
   // ],
-   [
-      '@vssue/vuepress-plugin-vssue', {
-      // 设置 `platform` 而不是 `api`
-        platform: 'github-v4',
-        locale: 'zh-CN',
-        owner: "zhanghaoju",//对应 仓库 的拥有者帐号或者团队
-        repo: "yychuiyan", // 用来存储评论的 仓库
-        clientId: "3606adc2786c9fa2696a",  // OAuth App 的 client id
-        clientSecret: "66aa4a9ef16f3874b59fc5d22eae622c4c9625a5",  // OAuth App 的 client secret
-       // autoCreateIssue: true,//自动创建评论
-    }
-  ],
-
+  // [
+  //     '@vssue/vuepress-plugin-vssue', {
+  //     // 设置 `platform` 而不是 `api`
+  //       platform: 'github',
+  //       locale: 'zh-CN',
+  //       owner: "zhanghaoju",//对应 仓库 的拥有者帐号或者团队
+  //       repo: "yychuiyan", // 用来存储评论的 仓库
+  //       clientId: "3606adc2786c9fa2696a",  // OAuth App 的 client id
+  //       clientSecret: "66aa4a9ef16f3874b59fc5d22eae622c4c9625a5",  // OAuth App 的 client secret
+  //      // autoCreateIssue: true,//自动创建评论
+  //   }
+  // ],
+  //   [
+  //     'vuepress-plugin-comment',
+  //     {
+  //       choosen: 'valine',
+  //       // options选项中的所有参数，会传给Valine的配置
+  //       options: {
+  //         el: '#valine-vuepress-comment',
+  //         appId: 'Ipq34wBx94kHywEDh8Z0b8KR-gzGzoHsz',
+  //         appKey: 'WADQBfeIgguNaFU81jwgZIDB',
+  //
+  //         // 评论框占位内容
+  //         placeholder: "评论支持Markdown语法",
+  //         // 评论者头像
+  //         avatar: "mp",
+  //         // 是否启用昵称框自动获取QQ昵称和QQ头像
+  //         // enableQQ: true,
+  //         // 访问量统计
+  //         visitor: true,
+  //       }
+  //     }
+  //   ]
 
 ];
