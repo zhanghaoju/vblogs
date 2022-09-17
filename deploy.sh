@@ -21,10 +21,9 @@ git commit -m 'deploy'
 
 # 命令：npm run deploy
 # 如果你想要部署发布到 https://USERNAME.github.io/<REPO>
-git push -f git@github.com:zhanghaoju/yychuiyan.git master:gh-pages
+git push -f git@github.com:zhanghaoju/vblogs.git master
 
 # 部署到服务器
 # git push -f git@121.5.150.123:/home/www/website/vblogs.git master
-
 
 cd -
