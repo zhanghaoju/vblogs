@@ -54,11 +54,14 @@ module.exports = [
     },
   ],
   [
-    '@vuepress/last-updated', // "上次更新"时间格式
+    '@vuepress/last-updated',
     {
       transformer: (timestamp, lang) => {
-        const dayjs = require('dayjs') // https://day.js.org/
-        return dayjs(timestamp).format('YYYY-MM-DD HH:mm:ss')
+        return new Date(timestamp).toUTCString();
+        //或者用下面这段
+        // const moment = require('moment')
+        // moment.locale(lang)
+        // return moment(timestamp).toLocaleString()
       },
     },
   ],
@@ -119,5 +122,4 @@ module.exports = [
   //       }
   //     }
   //   ]
-
 ];
