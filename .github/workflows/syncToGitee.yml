@@ -2,7 +2,7 @@ name: syncToGitee
 on:
   push:
     branches:
-      - master
+      - gh-pages
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -13,8 +13,8 @@ jobs:
           src: 'github/zhanghaoju'
           dst: 'gitee/zhanghaoju'
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
-          static_list: "vblogs"
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          static_list: 'vblogs'
           force_update: true
           debug: true
       - name: Build Gitee Pages
@@ -27,4 +27,4 @@ jobs:
           # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
           gitee-repo: zhanghaoju/vblogs
           # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
-          branch: master
+          branch: gh-pages
