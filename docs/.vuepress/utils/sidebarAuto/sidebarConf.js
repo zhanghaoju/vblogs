@@ -18,7 +18,6 @@ module.exports = {
     getDocPath('CSS必知必会', true, '/document/frontend/css/'),
     getDocPath('HTML/CSS进阶', true, '/document/frontend/html&css-advanced/'),
     getDocPath('JavaScript必知必会', true, '/document/frontend/javascript/'),
-    getDocPath('深入JavaScript', true, '/document/frontend/javascript-advanced/'),
     getDocPath('JavaScript扩展知识', true, '/document/frontend/javascript-extend/'),
     getDocPath('React教程', true, '/document/frontend/react/'),
     getDocPath('Vue教程', true, '/document/frontend/vue/'),

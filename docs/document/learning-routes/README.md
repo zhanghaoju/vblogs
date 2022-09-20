@@ -80,13 +80,16 @@ Vue3.0官方文档：[https://cn.vuejs.org/](https://cn.vuejs.org/)
 awesome-vue：[https://github.com/vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
 
 Vue.js 2.0 快速上手精华梳理：[https://juejin.im/post/59aa1248518825392656a86a](https://juejin.im/post/59aa1248518825392656a86a)
-[Vue学习看这篇就够](https://juejin.im/entry/5a54b747518825734216c3df)
+
+Vue学习看这篇就够了：[https://juejin.im/entry/5a54b747518825734216c3df](https://juejin.im/entry/5a54b747518825734216c3df)
 
 [译\] 从1万篇文章中挑出的40篇最棒的 Vue 学习指南（2018版）：[https://hijiangtao.github.io/2018/02/06/learn-vue-js-from-top-articles-for-the-past-year-v-2018/](https://hijiangtao.github.io/2018/02/06/learn-vue-js-from-top-articles-for-the-past-year-v-2018/)
 
 ### React
 
 react官网：[https://reactjs.org/](https://reactjs.org/)
+
+react技术揭秘：[https://react.iamkasong.com/](https://react.iamkasong.com/)
 
 React入门教程：[http://www.ruanyifeng.com/blog/2015/03/react.html](http://www.ruanyifeng.com/blog/2015/03/react.html)
 

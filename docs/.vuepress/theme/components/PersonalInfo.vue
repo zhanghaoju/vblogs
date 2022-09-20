@@ -1,65 +1,62 @@
 <template>
-<div class="personal-info-wrapper">
-  <img
-    class="personal-img"
-    v-if="$themeConfig.authorAvatar"
-    :src="$withBase($themeConfig.authorAvatar)"
-    alt="author-avatar"
-  >
-  <h3
-    class="name"
-    v-if="$themeConfig.author || $site.title"
-  >
-    {{ $themeConfig.author || $site.title }}
-  </h3>
-  <div class="num">
-    <div style="cursor: pointer">
-      <a href="https://zhanghaoju.gitee.io/vblogs/timeline/">
-      <h3>
-        {{$recoPosts.length}}
-      </h3>
-      <h6>{{homeBlogCfg.article}}</h6>
-      </a>
+  <div class="personal-info-wrapper">
+    <img
+      class="personal-img"
+      v-if="$themeConfig.authorAvatar"
+      :src="$withBase($themeConfig.authorAvatar)"
+      alt="author-avatar"
+    />
+    <h3 class="name" v-if="$themeConfig.author || $site.title">
+      {{ $themeConfig.author || $site.title }}
+    </h3>
+    <div class="num">
+      <div style="cursor: pointer">
+        <a href="https://yychuiyan.com/vblogs/timeline/">
+          <h3>
+            {{ $recoPosts.length }}
+          </h3>
+          <h6>{{ homeBlogCfg.article }}</h6>
+        </a>
+      </div>
+      <div>
+        <a href="https://yychuiyan.com/vblogs/tag/">
+          <h3>{{ $tags.list.length }}</h3>
+          <h6>{{ homeBlogCfg.tag }}</h6>
+        </a>
+      </div>
     </div>
-    <div>
-      <a href="https://zhanghaoju.gitee.io/vblogs/tag/">
-        <h3>{{$tags.list.length}}</h3>
-        <h6>{{homeBlogCfg.tag}}</h6>
-      </a>
-    </div>
+    <ul class="social-links">
+      <li class="social-item" v-for="(item, index) in socialLinks" :key="index">
+        <reco-icon :icon="item.icon" :link="item.link" :style="{ color: item.color }" />
+      </li>
+    </ul>
+    <hr />
   </div>
-  <ul class="social-links">
-    <li
-      class="social-item"
-      v-for="(item, index) in socialLinks"
-      :key="index"
-    >
-      <reco-icon :icon="item.icon" :link="item.link" :style="{ color: item.color }" />
-    </li>
-  </ul>
-  <hr>
-</div>
 </template>
 
 <script>
-import { defineComponent, computed } from '@vue/composition-api'
-import { RecoIcon } from '@vuepress-reco/core/lib/components'
-import { getOneColor } from '@theme/helpers/other'
+import { defineComponent, computed } from '@vue/composition-api';
+import { RecoIcon } from '@vuepress-reco/core/lib/components';
+import { getOneColor } from '@theme/helpers/other';
 
 export default defineComponent({
   components: { RecoIcon },
-  setup (props, ctx) {
-    const { root: _this } = ctx
+  setup(props, ctx) {
+    const { root: _this } = ctx;
 
-    const homeBlogCfg = computed(() => _this.$recoLocales.homeBlog)
-    const socialLinks = computed(() => (_this.$themeConfig.blogConfig && _this.$themeConfig.blogConfig.socialLinks || []).map(item => {
-      if (!item.color) item.color = getOneColor()
-      return item
-    }))
+    const homeBlogCfg = computed(() => _this.$recoLocales.homeBlog);
+    const socialLinks = computed(() =>
+      ((_this.$themeConfig.blogConfig && _this.$themeConfig.blogConfig.socialLinks) || []).map(
+        item => {
+          if (!item.color) item.color = getOneColor();
+          return item;
+        }
+      )
+    );
 
-    return { homeBlogCfg, socialLinks }
+    return { homeBlogCfg, socialLinks };
   },
-})
+});
 </script>
 
 <style lang="stylus" scoped>

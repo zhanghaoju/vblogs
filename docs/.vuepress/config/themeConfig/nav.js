@@ -52,7 +52,7 @@ module.exports = [
     items: [
       { text: '读书笔记', link: '/happiness/books/introduction/', icon: 'reco-document' },
       { text: '生活日常', link: '/happiness/life-records/introduction/', icon: 'reco-document' },
-      { text: '阅读专栏', link: '/happiness/read/introduction/', icon: 'reco-document' },
+      { text: '网络专栏', link: '/happiness/read/introduction/', icon: 'reco-document' },
     ],
   },
   {

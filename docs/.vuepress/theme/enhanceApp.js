@@ -14,11 +14,18 @@ export default ({
   Vue.use(VueCompositionAPI)
   Vue.mixin(postMixin)
   Vue.mixin(localMixin)
+  router.beforeEach((to, from, next) => {
+    if (typeof _hmt !== "undefined") {
+      if (to.path) {
+        _hmt.push(["_trackPageview", to.fullPath]);
+      }
+    }
+    next();
+  });
   if (!isServer) {
     addLinkToHead('//at.alicdn.com/t/font_1030519_2ciwdtb4x65.css')
     addScriptToHead('//kit.fontawesome.com/51b01de608.js')
     registerCodeThemeCss(siteData.themeConfig.codeTheme)
   }
-
   interceptRouterError(router)
 }
