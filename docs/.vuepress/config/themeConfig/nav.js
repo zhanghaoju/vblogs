@@ -39,6 +39,11 @@ module.exports = [
         icon: 'reco-document',
       },
       {
+        text: '错误异常记录',
+        link: '/document/exception-logging/introduction/',
+        icon: 'reco-document',
+      },
+      {
         text: '业务代码片段',
         link: '/document/business-code/introduction/',
         icon: 'reco-document',
@@ -76,6 +81,7 @@ module.exports = [
     items: [
       { text: 'GitHub', link: 'https://github.com/zhanghaoju', icon: '' },
       { text: '掘金', link: 'https://juejin.cn/user/149189312651341', icon: '' },
+      { text: '语雀', link: 'https://www.yuque.com/yycy', icon: '' },
       {text: '关于', link: '/about/', icon: ''},
     ],
   },

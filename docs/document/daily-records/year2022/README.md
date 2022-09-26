@@ -3,9 +3,8 @@ title: 2022年09月技术日常
 date: 2022-09-01
 permalink: /document/daily-records/year2022/
 ---
-各种日常遇到的疑难杂症及解决方案。
+## Vue
 
-## 2021/09/xx 周三
+### 2022.09.26
 
-### 描述
-
+[十分钟浅入Vue原理](https://zhuanlan.zhihu.com/p/138114429?utm_id=0)

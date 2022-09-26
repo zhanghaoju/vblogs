@@ -322,6 +322,12 @@ module.exports={
             "2233娘-无言":"https://i0.hdslb.com/bfs/emote/fdb5870f32cfaf7949e0f88a13f6feba4a48b719.png",
         }
     },
+    algolia: {
+        apiKey: '<API_KEY>',
+        indexName: '<INDEX_NAME>',
+        // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+        appId: '<APP_ID>',
+    },
     nav,
     blogConfig,
     friendLink, // 友链

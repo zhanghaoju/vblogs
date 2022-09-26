@@ -132,5 +132,3 @@ git config --global --unset email
 ```
 
 
-
-end.

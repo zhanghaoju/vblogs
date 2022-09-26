@@ -6,5 +6,5 @@ permalink: /document/daily-records/introduction/
 ---
 
 ::: tip 
-各种日常遇到的疑难杂症及解决方案过程
+优质技术文章阅读，理解汇总
 :::
