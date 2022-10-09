@@ -2,9 +2,9 @@
 title: 什么是BFC和IFC？
 date: 2022-09-06
 categories:
-- FrontEnd
+- CSS
 tags:
-  - css
+  - BFC&IFC
 ---
 
 ## BFC布局规则
@@ -116,7 +116,7 @@ BFC的区域不会与float box重叠
         width: 100px;
         float: left;
       }
-      
+
       .parent {
         border: 1px solid black;
         width: 300px;

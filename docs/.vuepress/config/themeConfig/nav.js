@@ -64,7 +64,7 @@ module.exports = [
     text: '索引',
     icon: '',
     items: [
-      { text: '博客分类', link: '/categories/FrontEnd/', icon: 'reco-category' },
+      { text: '博客分类', link: '/categories/JavaScript/', icon: 'reco-category' },
       { text: '博客标签', link: '/tag/', icon: 'reco-tag' },
       { text: '博客归档', link: '/timeline/', icon: 'reco-date' },
     ],
@@ -82,7 +82,7 @@ module.exports = [
       { text: 'GitHub', link: 'https://github.com/zhanghaoju', icon: '' },
       { text: '掘金', link: 'https://juejin.cn/user/149189312651341', icon: '' },
       { text: '语雀', link: 'https://www.yuque.com/yycy', icon: '' },
-      {text: '关于', link: '/about/', icon: ''},
+      { text: '关于', link: '/about/', icon: '' },
     ],
   },
 ];

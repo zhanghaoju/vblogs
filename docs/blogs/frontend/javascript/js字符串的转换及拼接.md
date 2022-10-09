@@ -2,9 +2,10 @@
 title: js字符串的转换及拼接
 date: 2022-09-24
 categories:
-- FrontEnd
+- JavaScript
 tags:
-  - javascript
+  - 字符串转换
+  - string
 ---
 
 ## 字符串的转换

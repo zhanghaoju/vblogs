@@ -6,9 +6,10 @@ sticky:
 - type: number
 - sort type: 1
 categories:
-  - FrontEnd
+  - JavaScript
 tags:
-  - javascript
+  - 原型
+  - 原型链
 
 ---
 

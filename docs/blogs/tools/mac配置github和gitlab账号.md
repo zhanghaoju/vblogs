@@ -4,7 +4,8 @@ date: 2022-02-22
 categories:
 - ToolClass
 tags:
-  - tools
+  - github
+  - gitlab
 ---
 
 >  前言：网上各种安装教程参差不齐，反复尝试了好几遍，中间耽误了很长时间，所以特意记录一下
@@ -69,9 +70,9 @@ User xxx@inc.com
 Port 22
 IdentityFile ~/.ssh/id_rsa
 
-Host github.com  
+Host github.com
 HostName github.com
-User xxxxx@outlook.com    // 邮箱地址 
+User xxxxx@outlook.com    // 邮箱地址
 IdentityFile ~/.ssh/id_rsa_github
 ```
 
@@ -89,8 +90,8 @@ git config --global user.name "账户名"                    # 账户名
 git config --global user.email "xxxxx@inc.com"    # 公司邮箱
 
 // 本地配置
-$ git config --local user.name  '夜雨炊烟'   
-$ git config --local user.email  'xxxxx@outlook.com' 
+$ git config --local user.name  '夜雨炊烟'
+$ git config --local user.email  'xxxxx@outlook.com'
 ```
 
 在进行本地配置的时候需要在一个已有的github仓库中才可以，不然会有冲突，设置之后如果git pull的时候出现：You can replace "git config" with "git config --global"相关的提示
