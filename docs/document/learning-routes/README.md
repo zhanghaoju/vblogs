@@ -45,7 +45,7 @@ Less：[http://www.bootcss.com/p/lesscss/](http://www.bootcss.com/p/lesscss/)
 
 Sass：[https://www.sass.hk/docs/](https://www.sass.hk/docs/)
 
-选择器：[https://lark.alipay.com/sjs.sjs/zsyd0o/ygziz](https://lark.alipay.com/sjs.sjs/zsyd0o/ygzizd)
+选择器：[未知](www.baidu.com)
 
 布局：[http://www.ruanyifeng.com/blog/](http://www.ruanyifeng.com/blog/) (阮一峰的博客上有很多)
 
